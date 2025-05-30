@@ -1,0 +1,77 @@
+body{
+    background-color: #fcdbd7;
+    /* background-color: #FFF5EE; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3baba;
+    /* background-color: #F6CFCA; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+img{
+    height: 90px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+
+
+button{
+    border-color:#f3baba;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200px;
+    background-color: #fcdbd7;
+    border-radius: 5px;
+    margin: 1px auto;
+    padding: 16px 48px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #cd9191;
+    color: white;
+  }
+  
+
+footer{
+  text-align: center;    
+}
+
+.validatorDesc{
+  display: flex;
+  font-size: x-small;
+  font-style: italic;
+  color: #976d6d;
+  margin: 0px 10px;
+}
+
+select{
+  background-color: #A6D6F1;
+  border-color: #A6D6F1;
+  color: white;
+  border-radius: 10px;
+}
+
+a{
+	color: #8B0000; 
+	margin: 0 10px; 
+	text-decoration: none; 
+}	

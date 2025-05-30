@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>reset Firstname Lastname</title>
+ <script type="text/javascript" src = "createAccount.js"></script>
+ <link rel="stylesheet" type="text/css" href="createAccount.css">
+ <!-- <script src="java.js"></script> -->
+</head>
+<body>
+<form id="contactForm" method="post" action="resetName.php">
+
+	 <div class="container">
+	 <a href="Frontpage.html"> <img src="https://w7.pngwing.com/pngs/906/671/png-transparent-newspaper-editorial-cartoon-headline-comics-white-cartoon.png"
+			width="80" height="67" border="0"/></a>
+	 <h3 align = "center">Reset your First name and Last name</h3>
+
+     <div>
+        <input type="text" id="fName" name="fName" placeholder="First Name">
+        <p class="validatorDesc">within 8-15 characters</p>
+    </div>
+
+    <div>
+        <input type="text" id="lName" name="lName" placeholder="Last Name">
+        <p class="validatorDesc">within 8-15 characters</p>
+    </div>
+
+    <button class="button" type="submit">Reset</button>
+    </div>
+	 </form>
+	 
+	 <footer>
+		<p>Powered by News API</p>
+		<p>Contact us: email@example.com</p>
+	</footer>
+	
+	<script>
+	// Add JavaScript to handle form submission
+	const contactForm = document.getElementById('contactForm');
+	contactForm.addEventListener('submit', (e) => {
+	//e.preventDefault(); // Prevent the form from submitting
+	// Get the form data
+	const formData = new FormData(contactForm);
+	const email = formData.get('email');
+	const password = formData.get('password');
+	
+	// Perform any additional validation if needed
+	// Send the form data to the server (you can replace this with your own logic)
+	// Here, we're simply logging the data to the console
+	console.log('Email:', email);
+	console.log('Password:', password);
+	});
+	</script>
+	</body>
+</html>
